@@ -34,7 +34,7 @@ public class ApplicationContextBasicTest {
     @Test
     @DisplayName("구현체 타입으로 조회")
     void findBenaByNAme2() {
-        MemberService memberService = ac.getBean( "memberService", MemberServiceImpl.class);
+        MemberService memberService = ac.getBean( "memb erService", MemberServiceImpl.class);
         assertThat(memberService).isInstanceOf(MemberServiceImpl.class);
     }
 
